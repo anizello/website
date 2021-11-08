@@ -1,10 +1,16 @@
 import styled, { css } from 'styled-components'
 
+import { Wrapper as Profile } from 'components/Profile/styles'
+
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
     gap: ${theme.spacing4};
+
+    ${Profile} & {
+      margin-bottom: ${theme.spacing4};
+    }
   `}
 `
 

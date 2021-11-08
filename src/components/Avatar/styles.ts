@@ -1,6 +1,9 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 import * as AvatarPrimitive from '@radix-ui/react-avatar'
+
+import { ImageWrapper as Profile } from 'components/Profile/styles'
 
 export const Avatar = styled(AvatarPrimitive.Root)`
   ${({ theme }) => css`
@@ -15,6 +18,13 @@ export const Avatar = styled(AvatarPrimitive.Root)`
     border-radius: ${theme.border.radiusRound};
     overflow: hidden;
     user-select: none;
+
+    ${Profile} & {
+      ${media.lessThan('medium')`
+        width: ${theme.spacing11};
+        height: ${theme.spacing11};
+      `}
+    }
   `}
 `
 
