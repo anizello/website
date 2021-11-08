@@ -23,6 +23,7 @@ export const Wrapper = styled.span<WrapperProps>`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 
     padding: ${theme.spacing2} ${theme.spacing4};
     width: max-content;
