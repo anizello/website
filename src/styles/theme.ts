@@ -68,7 +68,7 @@ export default {
   spacing2: '0.4rem',
   spacing3: '0.8rem',
   spacing4: '1.6rem',
-  spacing5: '1.6rem',
+  spacing5: '2.0rem',
   spacing6: '2.4rem',
   spacing7: '3.2rem',
   spacing8: '4.8rem',
