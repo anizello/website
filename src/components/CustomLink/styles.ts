@@ -2,6 +2,8 @@ import styled, { css, DefaultTheme } from 'styled-components'
 
 import { CustomLinkProps } from '.'
 
+import { Wrapper as CalloutStatus } from 'components/CalloutStatus/styles'
+
 export type WrapperProps = {
   hasIcon: boolean
 } & Pick<CustomLinkProps, 'color' | 'highlight'>
@@ -51,6 +53,11 @@ export const Wrapper = styled.a<WrapperProps>`
 
     &:hover {
       transition: color text-decoration-color ${theme.transition.default};
+    }
+
+    ${CalloutStatus} & {
+      text-transform: uppercase;
+      white-space: pre-line;
     }
 
     ${!!color && wrapperModifiers[color](theme)}
