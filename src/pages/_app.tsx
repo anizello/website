@@ -1,6 +1,8 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
+import { IdProvider } from '@radix-ui/react-id'
+
 import { ThemeProvider } from 'styled-components'
 import theme from 'styles/theme'
 
@@ -21,7 +23,9 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <IdProvider>
+        <Component {...pageProps} />
+      </IdProvider>
     </ThemeProvider>
   )
 }
