@@ -3,6 +3,9 @@ import Head from 'next/head'
 
 import NextNprogress from 'nextjs-progressbar'
 
+import { DefaultSeo } from 'next-seo'
+import SEO from '../../next-seo.config'
+
 import { IdProvider } from '@radix-ui/react-id'
 
 import { ThemeProvider } from 'styled-components'
@@ -14,16 +17,12 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>Anizello · Frontend Developer</title>
         <link rel="shortcut icon" href="/img/favicon.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#151718" />
-        <meta
-          name="description"
-          content="My personal website built with NextJS, Typescript and Styled Components."
-        />
       </Head>
+      <DefaultSeo {...SEO} />
       <GlobalStyles />
       <NextNprogress
         color={theme.colors.teal10}

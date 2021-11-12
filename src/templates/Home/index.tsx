@@ -1,3 +1,5 @@
+import { NextSeo } from 'next-seo'
+
 import Profile, { ProfileProps } from 'components/Profile'
 import Project, { ProjectProps } from 'components/Project'
 import SectionTitle from 'components/SectionTitle'
@@ -13,6 +15,8 @@ export type HomeTemplateProps = {
 
 const HomeTemplate = ({ profile, projects }: HomeTemplateProps) => (
   <Base>
+    <NextSeo description="I'm a Frontend Developer that loves creating UI and bringing them to life with code. I enjoy simple, yet delightful experiences." />
+
     <S.Wrapper>
       {!!profile && <Profile {...profile} />}
 
