@@ -56,6 +56,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
+      background-color: ${theme.colors.primary1};
       font-family: ${theme.font.family};
       font-size: ${theme.font.size2};
       line-height: 1.5;

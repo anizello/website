@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
     height: 100vh;
     padding: ${theme.spacing7} 0 ${theme.spacing10};
 
-    background-color: ${theme.colors.primary1};
     color: ${theme.colors.primary11};
   `}
 `
