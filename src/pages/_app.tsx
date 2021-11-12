@@ -1,6 +1,8 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
+import NextNprogress from 'nextjs-progressbar'
+
 import { IdProvider } from '@radix-ui/react-id'
 
 import { ThemeProvider } from 'styled-components'
@@ -23,6 +25,12 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
+      <NextNprogress
+        color={theme.colors.teal10}
+        startPosition={0.3}
+        stopDelayMs={200}
+        height={3}
+      />
       <IdProvider>
         <Component {...pageProps} />
       </IdProvider>
