@@ -1,14 +1,14 @@
 export default {
   title: 'Anizello · Frontend Developer',
-  canonical: 'https://anizello.com',
+  canonical: 'https://www.anizello.com',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://anizello.com',
+    url: 'https://www.anizello.com',
     site_name: 'Anizello · Frontend Developer',
     images: [
       {
-        url: 'https://anizello.com/img/cover.png',
+        url: 'https://www.anizello.com/img/cover.png',
         width: 1200,
         height: 630,
         alt: 'Anizello · Frontend Developer'
