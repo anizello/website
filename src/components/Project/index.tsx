@@ -13,7 +13,7 @@ export type ProjectProps = {
   image: string
   linkLabel: string
   linkSource: string
-  status?: string
+  statusTag?: string
 }
 
 const Project = ({
@@ -22,7 +22,7 @@ const Project = ({
   image,
   linkLabel,
   linkSource,
-  status
+  statusTag
 }: ProjectProps) => (
   <S.Wrapper>
     <S.ImageWrapper>
@@ -39,12 +39,12 @@ const Project = ({
     <S.ContentWrapper>
       <S.TitleWrapper>
         <S.Title>{title}</S.Title>
-        {!!status && <Tag>{status}</Tag>}
+        {!!statusTag && <Tag>{statusTag}</Tag>}
       </S.TitleWrapper>
 
       <S.Description>{description}</S.Description>
 
-      {!!linkLabel && (
+      {!!linkSource && (
         <Link href={linkSource} passHref>
           <CustomLink highlight icon={<ExternalLinkIcon />}>
             {linkLabel}

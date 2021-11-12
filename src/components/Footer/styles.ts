@@ -7,7 +7,7 @@ export const Wrapper = styled.footer`
     flex-direction: column;
     gap: ${theme.spacing7};
 
-    padding-top: ${theme.spacing4};
+    padding: ${theme.spacing4} 0 ${theme.spacing9};
 
     border-top: 1px solid ${theme.colors.primary6};
 
