@@ -14,6 +14,8 @@ export default {
   font: {
     family:
       "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+    familyCode:
+      "'Source Code Pro', SFMono-Regular, Consolas,'Liberation Mono', Menlo, monospace",
     size1: '0.9rem',
     size2: '1.3rem',
     size3: '1.5rem',
