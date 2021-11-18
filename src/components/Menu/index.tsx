@@ -32,7 +32,7 @@ const Menu = () => {
 
         <S.MenuGroup>
           <Link href="https://github.com/anizello" passHref>
-            <CustomLink icon={<GithubIcon />} target="_blank">
+            <CustomLink icon={<GithubIcon />} target="_blank" rel="noopener">
               Github
             </CustomLink>
           </Link>

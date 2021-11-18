@@ -13,7 +13,12 @@ const Footer = ({ children }: FooterProps) => (
     <S.ContentWrapper>{children}</S.ContentWrapper>
 
     <Link href="https://github.com/anizello/website" passHref>
-      <CustomLink highlight icon={<ExternalLinkIcon />} target="_blank">
+      <CustomLink
+        highlight
+        icon={<ExternalLinkIcon />}
+        target="_blank"
+        rel="noopener"
+      >
         Website Repository
       </CustomLink>
     </Link>

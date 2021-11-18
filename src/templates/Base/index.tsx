@@ -21,7 +21,12 @@ const Base = ({ children }: BaseTemplateProps) => (
       <S.SectionFooter>
         <Footer>
           Built with ⚡ using{' '}
-          <CustomLink highlight href="https://nextjs.org/" target="_blank">
+          <CustomLink
+            highlight
+            href="https://nextjs.org/"
+            target="_blank"
+            rel="noopener"
+          >
             NextJS
           </CustomLink>
           ,{' '}
@@ -29,15 +34,26 @@ const Base = ({ children }: BaseTemplateProps) => (
             highlight
             href="https://styled-components.com/"
             target="_blank"
+            rel="noopener"
           >
             Styled Components
           </CustomLink>
           ,{' '}
-          <CustomLink highlight href="https://graphcms.com/" target="_blank">
+          <CustomLink
+            highlight
+            href="https://graphcms.com/"
+            target="_blank"
+            rel="noopener"
+          >
             GraphCMS
           </CustomLink>{' '}
           and{' '}
-          <CustomLink highlight href="https://vercel.com/" target="_blank">
+          <CustomLink
+            highlight
+            href="https://vercel.com/"
+            target="_blank"
+            rel="noopener"
+          >
             Vercel
           </CustomLink>
           .
