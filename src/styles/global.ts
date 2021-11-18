@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
+    font-display: swap;
     src: local('Inter Extrabold'), local('Inter-Extrabold'),
         url('/fonts/inter-v3-latin-900.woff2') format('woff2');
   }
@@ -26,6 +27,8 @@ const GlobalStyles = createGlobalStyle`
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     img,
@@ -60,7 +63,6 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${theme.font.family};
       font-size: ${theme.font.size2};
       line-height: 1.5;
-      -webkit-font-smoothing: antialiased;
     }
   `}
 `

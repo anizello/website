@@ -42,7 +42,20 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en-US">
-        <Head />
+        <Head>
+          <link
+            rel="preload"
+            href="/fonts/inter-v3-latin-regular.woff2"
+            as="font"
+            type="font/woff2"
+          />
+          <link
+            rel="preload"
+            href="/fonts/inter-v3-latin-900.woff2"
+            as="font"
+            type="font/woff2"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
