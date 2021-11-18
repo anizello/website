@@ -1,0 +1,7 @@
+#  /\_/\
+# ( o.o )
+#  > ^ <
+
+User-agent: *
+Allow: /
+Sitemap: https://www.anizello.com/sitemap.xml
