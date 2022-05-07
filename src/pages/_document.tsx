@@ -48,12 +48,14 @@ export default class MyDocument extends Document {
             href="/fonts/inter-v3-latin-regular.woff2"
             as="font"
             type="font/woff2"
+            crossOrigin="true"
           />
           <link
             rel="preload"
             href="/fonts/inter-v3-latin-900.woff2"
             as="font"
             type="font/woff2"
+            crossOrigin="true"
           />
         </Head>
         <body>
